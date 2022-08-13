@@ -1,7 +1,7 @@
 <?php include('partials/menu.php') ?>
 
 
-<div class="main-content">
+<div class="container">
         <div class="wrapper">
                <h1>Manage Service Points</h1>
                <br> <br>
@@ -38,14 +38,14 @@
 
 
                ?>
-               <br><br>
+               <!-- <br><br> -->
 
                <!-- button to add admin -->
-               <a href="<?php echo  SITEURL; ?>addServicePoint.php" class="btn-primary">Add Service Point</a>
+               <a href="<?php echo  SITEURL; ?>addServicePoint.php" class="btn btn-primary">Add Service Point</a>
                <br> <br> <br>
 
-               <table class="tbl-full">
-                  <tr>
+               <table class="table table-hover">
+                  <tr class="table-active">
                       <th>ID</th>
                       <th>Name</th>
                       <th>Phone</th>
@@ -83,7 +83,7 @@
                               // display in the table 
                               ?>
 
-                              <tr>
+                              <tr >
                                 <td><?php echo $sn++?></td>
                                 <td><?php echo $name?></td>
                                 <td><?php echo $phone?></td>
@@ -93,9 +93,9 @@
                                 <td><?php echo $username?></td>
                                 
                                 <td>   
-                                <a href="<?php echo  SITEURL; ?>ServicePoint-changePassword.php" class="btn-primary">change password</a>
-                                    <a href="<?php echo  SITEURL; ?>updateServicePoint.php?ServicePointId=<?php echo $id; ?>" class="btn-secondary">Update Service Point</a> 
-                                    <a href="<?php echo  SITEURL; ?>deleteServicePoint.php" class="btn-danger">Delete Service Point</a> 
+                                <a href="<?php echo  SITEURL; ?>ServicePoint-changePassword.php?ServicePointId=<?php echo $id; ?>" class="btn btn-info" role="group">change password</a>
+                                    <a href="<?php echo  SITEURL; ?>updateServicePoint.php?ServicePointId=<?php echo $id; ?>" class="btn btn-warning" role="group">Update</a> 
+                                    <a href="<?php echo  SITEURL; ?>deleteServicePoint.php?ServicePointId=<?php echo $id; ?>" class="btn btn-danger" role="group">Delete</a> 
                                 </td>
                               </tr>
                               <?php
@@ -107,7 +107,7 @@
                             //display message 
                             ?>
                             <tr>
-                              <td colspan="6"><div class="error">No Service Point Added</div></td>
+                              <td colspan="6"><div class="text-danger">No Service Point Added</div></td>
                             </tr>
 
                             <?php 

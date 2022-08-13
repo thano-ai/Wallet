@@ -1,15 +1,15 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 .wrapper{
     /* border: 1px solid black; */
     padding: 1%;
     width: 80%;
     margin: 0 auto;
-   
-}
+}  
+/* 
 .text-center{
     text-align: center;
 }
@@ -77,10 +77,10 @@ input{
 }
 .error{
     color:#ff4757 ;
-}
+} */
 
 /* css for menu    */
-.menu{
+/* .menu{
     border-bottom: 1px solid grey;
 }
 .menu ul{
@@ -97,9 +97,9 @@ input{
 }
 .menu ul li a:hover{
     color: #ff4757;
-}
+} */
 /* css for main-content    */
-.main-content{
+/* .main-content{
     background-color: #f1f2f6;
     padding: 3% 0;
 }
@@ -109,16 +109,16 @@ input{
     margin: 1%;
     padding: 2%;
     float: left;
-}
+} */
 
 /* css for footer    */
-.footer{
+/* .footer{
     background-color: #ff6b81;
     color: white;
 
-}
+} */
 /* css for login */
-.login{
+/* .login{
     width: 20%;
     border: 1px solid grey;
     margin: 10% auto;
@@ -130,4 +130,4 @@ input{
 .login a{
     text-decoration: none;
     color: #ff6b81;
-}
+} */

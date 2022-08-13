@@ -1,11 +1,11 @@
 <?php include('partials/menu.php') ?>
 
 <!-- main content section starts -->
-<div class="main-content">
+<div class="container">
         <div class="wrapper">
-               <h1>Dashbord</h1>
+               <h1>Dashboard</h1>
                <br><br>
-		<div>
-<div>
+        </div>
+</div>
 
 <?php include('partials/footer.php') ?>      
