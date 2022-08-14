@@ -102,7 +102,9 @@ $newDate = date('Y-M-d h:i:s');
         //RETURN TO MANAGE PAGE 
         ob_start();
 
-        header('location:'.SITEURL.'manageServicePoint.php',  true,  301 );  exit; 
+        $script = "<script>
+        window.location = 'http://localhost:8080/Wallet/manageServicePoint.php';</script>";
+        echo $script;
         
     }
     else{
@@ -113,8 +115,9 @@ $newDate = date('Y-M-d h:i:s');
         // creat session value for display the message
         $_SESSION['add'] = "<div class='text-danger'>Failed To Add Service Point</div>" ;
        // RETURN TO MANAGE ADMIN PAGE 
-       header("location:".SITEURL.'manageServicePoint.php') ;
-    }
+       $script = "<script>
+       window.location = 'http://localhost:8080/Wallet/manageServicePoint.php';</script>";
+       echo $script;    }
 
 }
 

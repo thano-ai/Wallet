@@ -7,6 +7,7 @@
 
                 <?php
 
+
                  // get the id of the selected admin
                  $id = $_GET['ServicePointId'] ;
 
@@ -35,7 +36,10 @@
                      else{
                         $_SESSION['no-admin-found'] = "<div class='error'>admin not found</div>" ;
                          // return to the manage admin
-                         header("location:".SITEURL.'manageServicePoint.php') ;
+                         $script = "<script>
+                         window.location = 'http://localhost:8080/Wallet/manageServicePoint.php';</script>";
+                         echo $script;
+
                      }
                  }
                 
@@ -113,15 +117,20 @@ if(isset($_POST['submit'])){
         // creat session 
         $_SESSION['update'] = "<div class='text-success'>Service Point Updated Successfully</div>" ;
         //RETURN TO MANAGE ADMIN PAGE 
-        header("location:".SITEURL.'manageServicePoint.php') ;
+       
+        $script = "<script>
+        window.location = 'http://localhost:8080/Wallet/manageServicePoint.php';</script>";
+        echo $script;
+    
     }
     else{
         // failed 
         // creat session 
         $_SESSION['update'] = "<div class='text-danger'>Failed To Update Service Point</div>" ;
         //RETURN TO MANAGE ADMIN PAGE 
-        header("location:".SITEURL.'manageServicePoint.php') ;
-    //  echo "Error in statement execution.\n";  
+        $script = "<script>
+        window.location = 'http://localhost:8080/Wallet/manageServicePoint.php';</script>";
+        echo $script;    //  echo "Error in statement execution.\n";  
     //  die( print_r( sqlsrv_errors(), true)); 
     }
 

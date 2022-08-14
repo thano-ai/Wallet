@@ -96,7 +96,7 @@
                                 <!-- <td><?php echo $photo?></td> -->
                                 
                                 <td>   
-                                <a href="<?php echo  SITEURL; ?>showClientDetails.php?ClientId=<?php echo $id; ?>" class="btn btn-info">Show Details</a>
+                                <a style="background-color:#1565C0FF ;" href="<?php echo  SITEURL; ?>showClientDetails.php?ClientId=<?php echo $id; ?>" class="btn btn-info">Show Details</a>
                                     <a href="<?php echo  SITEURL; ?>updateClient.php?ClientId=<?php echo $id; ?>" class="btn btn-warning">Update</a> 
                                     <!-- <a href="<?php echo  SITEURL; ?>deleteServicePoint.php?ServicePointId=<?php echo $id; ?>" class="btn-danger">Delete Service Point</a>  -->
                                 </td>

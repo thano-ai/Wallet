@@ -34,7 +34,9 @@
                      else{
                         $_SESSION['no-admin-found'] = "<div class='error'>currency not found</div>" ;
                          // return to the manage admin
-                         header("location:".SITEURL.'mamageCurrencies.php') ;
+                         $script = "<script>
+                         window.location = 'http://localhost:8080/Wallet/mamageCurrencies.php';</script>";
+                         echo $script;
                      }
                  }
                 
@@ -84,7 +86,7 @@ if(isset($_POST['submit'])){
     $sql2 = "UPDATE currencies SET
     sellingPrice = $sellingPrice,
     buyingPrice = $buyingPrice
-    WHERE id =$id
+    WHERE id = $id
     ";
 
 
@@ -97,7 +99,9 @@ if(isset($_POST['submit'])){
         // creat session 
         $_SESSION['update'] = "<div class='text-success'>Currency Updated Successfully</div>" ;
         //RETURN TO MANAGE ADMIN PAGE 
-        header("location:".SITEURL.'mamageCurrencies.php') ;
+        $script = "<script>
+        window.location = 'http://localhost:8080/Wallet/manageCleints.php';</script>";
+        echo $script;        
     }
     else{
         // failed 

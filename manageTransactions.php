@@ -97,7 +97,7 @@
                                 <td><?php echo $AccountId?></td>
                                 <td><?php echo $ServicePointId?></td> -->
                                 <td>   
-                                <a href="<?php echo  SITEURL; ?>showTransactionDetails.php?ClientId=<?php echo $id; ?>" class="btn btn-info">Show Details</a>
+                                <a style="background-color:#1565C0FF ;" href="<?php echo  SITEURL; ?>showTransactionDetails.php?ClientId=<?php echo $id; ?>" class="btn btn-info">Show Details</a>
                                 </td>
                               </tr>
                               <?php

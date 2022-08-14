@@ -100,21 +100,24 @@ if(isset($_POST['submit'])){
               if($res2==true){
                 $_SESSION['change'] = "<div class='text-success'>password changes successfully</div>" ;
                 // return to the manage admin
-                header("location:".SITEURL.'manageServicePoint.php') ;
-
+                $script = "<script>
+                window.location = 'http://localhost:8080/Wallet/manageServicePoint.php';</script>";
+                echo $script;
               }
               else{
                 $_SESSION['change'] = "<div class='text-danger'>failed to change password</div>" ;
                 // return to the manage admin
-                header("location:".SITEURL.'manageServicePoint.php') ;
-              }
+                $script = "<script>
+                window.location = 'http://localhost:8080/Wallet/manageServicePoint.php';</script>";
+                echo $script;              }
         }
 
         else{
                 $_SESSION['noMatch'] = "<div class='text-danger'>password not match</div>" ;
                 // return to the manage admin
-                header("location:".SITEURL.'manageServicePoint.php') ;
-            //return to manage admin
+                $script = "<script>
+                window.location = 'http://localhost:8080/Wallet/manageServicePoint.php';</script>";
+                echo $script;            //return to manage admin
         }
             
         
@@ -123,8 +126,9 @@ if(isset($_POST['submit'])){
         else{
             $_SESSION['noUser'] = "<div class='text-danger'>user not found. </div>" ;
             // return to the manage admin
-            header("location:".SITEURL.'manageServicePoint.php') ;
-        }
+            $script = "<script>
+            window.location = 'http://localhost:8080/Wallet/manageServicePoint.php';</script>";
+            echo $script;        }
     }
 }
 

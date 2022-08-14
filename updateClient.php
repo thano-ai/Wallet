@@ -38,7 +38,9 @@
                      else{
                         $_SESSION['no-admin-found'] = "<div class='error'>client not found</div>" ;
                          // return to the manage admin
-                         header("location:".SITEURL.'manageCleints.php') ;
+                         $script = "<script>
+                         window.location = 'http://localhost:8080/Wallet/manageCleints.php';</script>";
+                         echo $script;
                      }
                  }
                 
@@ -136,7 +138,9 @@ if(isset($_POST['submit'])){
         // creat session 
         $_SESSION['update'] = "<div class='text-success'>Client Updated Successfully</div>" ;
         //RETURN TO MANAGE ADMIN PAGE 
-        header("location:".SITEURL.'manageCleints.php') ;
+        $script = "<script>
+        window.location = 'http://localhost:8080/Wallet/manageCleints.php';</script>";
+        echo $script;
     }
     else{
         // failed 

@@ -2,7 +2,7 @@
 
 
 <div class="container">
-        <div class="wrapper">
+        <div style="width:90% ;" class="wrapper">
                <h1>Manage Service Points</h1>
                <br> <br>
                <?php
@@ -41,7 +41,7 @@
                <!-- <br><br> -->
 
                <!-- button to add admin -->
-               <a href="<?php echo  SITEURL; ?>addServicePoint.php" class="btn btn-primary">Add Service Point</a>
+               <a style="background-color:#1565C0FF ;" href="<?php echo  SITEURL; ?>addServicePoint.php" class="btn btn-primary">Add Service Point</a>
                <br> <br> <br>
 
                <table class="table table-hover">
@@ -93,7 +93,7 @@
                                 <td><?php echo $username?></td>
                                 
                                 <td>   
-                                <a href="<?php echo  SITEURL; ?>ServicePoint-changePassword.php?ServicePointId=<?php echo $id; ?>" class="btn btn-info" role="group">change password</a>
+                                <a style="background-color:#1565C0FF ;" href="<?php echo  SITEURL; ?>ServicePoint-changePassword.php?ServicePointId=<?php echo $id; ?>" class="btn btn-info" role="group">change password</a>
                                     <a href="<?php echo  SITEURL; ?>updateServicePoint.php?ServicePointId=<?php echo $id; ?>" class="btn btn-warning" role="group">Update</a> 
                                     <a href="<?php echo  SITEURL; ?>deleteServicePoint.php?ServicePointId=<?php echo $id; ?>" class="btn btn-danger" role="group">Delete</a> 
                                 </td>

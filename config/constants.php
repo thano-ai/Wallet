@@ -2,7 +2,7 @@
 
 session_start() ;
 
-define('SITEURL' , 'http://localhost:8088/Wallet/') ;
+define('SITEURL' , 'http://localhost:8080/Wallet/') ;
 $serverName = "THANAA"; 
 $uid = "";   
 $pwd = "";  

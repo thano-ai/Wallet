@@ -16,15 +16,17 @@ include('config/constants.php') ;
     // create session to display message
     $_SESSION['delete'] = "<div class='text-success'>Service Point deleted successfully</div>";
     //RETURN TO MANAGE ADMIN PAGE 
-    header("location:".SITEURL.'manageServicePoint.php') ;
- }
+    $script = "<script>
+    window.location = 'http://localhost:8080/Wallet/manageServicePoint.php';</script>";
+    echo $script; }
  else{
      // admin not deleted
     //  echo "Admin not deleted " ; 
     $_SESSION['delete'] = "<div class='text-danger'>Service Point is not deleted</div> ";
     //RETURN TO MANAGE ADMIN PAGE 
-    header("location:".SITEURL.'manageServicePoint.php') ;
-   
+    $script = "<script>
+    window.location = 'http://localhost:8080/Wallet/manageServicePoint.php';</script>";
+    echo $script;   
      
  }
 
