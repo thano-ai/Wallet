@@ -3,6 +3,7 @@
 <div class="container">
         <div class="wrapper">
                <h1>Transaction Details</h1>
+<<<<<<< HEAD
                <br> <br>
                <?php
             //    if(isset($_SESSION['add'])){
@@ -42,6 +43,10 @@
                <!-- button to add admin -->
                <!-- <a href="<?php echo  SITEURL; ?>addServicePoint.php" class="btn-primary">Add Service Point</a> -->
                <br> <br> <br>
+=======
+               <br> <br><br>
+               
+>>>>>>> c882d4c (init2)
 
                <table class="table table-hover">
                   <tr class="table-active">
@@ -59,8 +64,15 @@
                   </tr>
 
                   <?php
+<<<<<<< HEAD
                       // display from database
                       $sql = "SELECT * from transactions" ;
+=======
+                  $id = $_GET['id'] ;
+                      // display from database
+                      $sql = "SELECT * from transactions
+                      WHERE id = $id" ;
+>>>>>>> c882d4c (init2)
                       $res = sqlsrv_query($con,$sql) ;
 
                       if($res==true){

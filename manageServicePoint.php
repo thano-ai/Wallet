@@ -93,7 +93,11 @@
                                 <td><?php echo $username?></td>
                                 
                                 <td>   
+<<<<<<< HEAD
                                 <a style="background-color:#1565C0FF ;" href="<?php echo  SITEURL; ?>ServicePoint-changePassword.php?ServicePointId=<?php echo $id; ?>" class="btn btn-info" role="group">change password</a>
+=======
+                                <a  href="<?php echo  SITEURL; ?>ServicePoint-changePassword.php?ServicePointId=<?php echo $id; ?>" class="btn btn-info" role="group">change password</a>
+>>>>>>> c882d4c (init2)
                                     <a href="<?php echo  SITEURL; ?>updateServicePoint.php?ServicePointId=<?php echo $id; ?>" class="btn btn-warning" role="group">Update</a> 
                                     <a href="<?php echo  SITEURL; ?>deleteServicePoint.php?ServicePointId=<?php echo $id; ?>" class="btn btn-danger" role="group">Delete</a> 
                                 </td>

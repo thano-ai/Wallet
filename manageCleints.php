@@ -5,6 +5,7 @@
                <h1>Manage Cleints</h1>
                <br> <br>
                <?php
+<<<<<<< HEAD
             //    if(isset($_SESSION['add'])){
             //       echo $_SESSION['add'] ;
             //       unset($_SESSION['add']) ; //display just one time 
@@ -13,10 +14,13 @@
             //       echo $_SESSION['delete'] ;
             //       unset($_SESSION['delete']) ; //display just one time 
             //    }
+=======
+>>>>>>> c882d4c (init2)
                if(isset($_SESSION['update'])){
                   echo $_SESSION['update'] ;
                   unset($_SESSION['update']) ; //display just one time 
                }
+<<<<<<< HEAD
             //    if(isset($_SESSION['noUser'])){
             //       echo $_SESSION['noUser'] ;
             //       unset($_SESSION['noUser']) ; //display just one time 
@@ -42,6 +46,10 @@
                <!-- button to add admin -->
                <!-- <a href="<?php echo  SITEURL; ?>addServicePoint.php" class="btn-primary">Add Service Point</a> -->
                <!-- <br> <br> <br> -->
+=======
+               ?>
+               <br>
+>>>>>>> c882d4c (init2)
 
                <table class="table table-hover">
                   <tr class="table-active">
@@ -96,7 +104,11 @@
                                 <!-- <td><?php echo $photo?></td> -->
                                 
                                 <td>   
+<<<<<<< HEAD
                                 <a style="background-color:#1565C0FF ;" href="<?php echo  SITEURL; ?>showClientDetails.php?ClientId=<?php echo $id; ?>" class="btn btn-info">Show Details</a>
+=======
+                                <a  href="<?php echo  SITEURL; ?>showClientDetails.php?ClientId=<?php echo $id; ?>" class="btn btn-info">Show Details</a>
+>>>>>>> c882d4c (init2)
                                     <a href="<?php echo  SITEURL; ?>updateClient.php?ClientId=<?php echo $id; ?>" class="btn btn-warning">Update</a> 
                                     <!-- <a href="<?php echo  SITEURL; ?>deleteServicePoint.php?ServicePointId=<?php echo $id; ?>" class="btn-danger">Delete Service Point</a>  -->
                                 </td>

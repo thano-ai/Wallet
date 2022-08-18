@@ -4,11 +4,15 @@
         <div class="wrapper">
                <h1>Cleint Details</h1>
                <br> <br>
+<<<<<<< HEAD
 
                <!-- button to add admin -->
                <!-- <a href="<?php echo  SITEURL; ?>addServicePoint.php" class="btn-primary">Add Service Point</a> -->
                <!-- <br> <br> <br> -->
 
+=======
+               
+>>>>>>> c882d4c (init2)
                <table class="table table-hover">
                   <tr class="table-active">
                       <th>ID</th>
@@ -24,7 +28,13 @@
 
                   <?php
                       // display from database
+<<<<<<< HEAD
                       $sql = "SELECT * from clients" ;
+=======
+                      $id = $_GET['ClientId'] ;
+                      $sql = "SELECT * from clients
+                      WHERE ClientId =$id" ;
+>>>>>>> c882d4c (init2)
                       $res = sqlsrv_query($con,$sql) ;
 
                       if($res==true){

@@ -5,6 +5,7 @@
                <h1>Manage Currencies</h1>
                <br> <br>
                <?php
+<<<<<<< HEAD
             //    if(isset($_SESSION['add'])){
             //       echo $_SESSION['add'] ;
             //       unset($_SESSION['add']) ; //display just one time 
@@ -13,10 +14,13 @@
             //       echo $_SESSION['delete'] ;
             //       unset($_SESSION['delete']) ; //display just one time 
             //    }
+=======
+>>>>>>> c882d4c (init2)
                if(isset($_SESSION['update'])){
                   echo $_SESSION['update'] ;
                   unset($_SESSION['update']) ; //display just one time 
                }
+<<<<<<< HEAD
             //    if(isset($_SESSION['noUser'])){
             //       echo $_SESSION['noUser'] ;
             //       unset($_SESSION['noUser']) ; //display just one time 
@@ -38,6 +42,10 @@
 
                ?>
                <br><br>
+=======
+               ?>
+               <br>
+>>>>>>> c882d4c (init2)
 
                <!-- button to add admin -->
                <!-- <a href="<?php echo  SITEURL; ?>addServicePoint.php" class="btn-primary">Add Service Point</a> -->

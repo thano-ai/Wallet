@@ -3,6 +3,7 @@
 <div class="container">
         <div class="wrapper">
                <h1>Manage Transactions</h1>
+<<<<<<< HEAD
                <br> <br>
                <?php
             //    if(isset($_SESSION['add'])){
@@ -42,6 +43,9 @@
                <!-- button to add admin -->
                <!-- <a href="<?php echo  SITEURL; ?>addServicePoint.php" class="btn-primary">Add Service Point</a> -->
                <br> <br> <br>
+=======
+               <br> <br><br>
+>>>>>>> c882d4c (init2)
 
                <table class="table table-hover">
                   <tr class="table-active">
@@ -97,7 +101,11 @@
                                 <td><?php echo $AccountId?></td>
                                 <td><?php echo $ServicePointId?></td> -->
                                 <td>   
+<<<<<<< HEAD
                                 <a style="background-color:#1565C0FF ;" href="<?php echo  SITEURL; ?>showTransactionDetails.php?ClientId=<?php echo $id; ?>" class="btn btn-info">Show Details</a>
+=======
+                                <a  href="<?php echo  SITEURL; ?>showTransactionDetails.php?id=<?php echo $id; ?>" class="btn btn-info">Show Details</a>
+>>>>>>> c882d4c (init2)
                                 </td>
                               </tr>
                               <?php
