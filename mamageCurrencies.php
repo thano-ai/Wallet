@@ -6,6 +6,7 @@
                <br> <br>
                <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
             //    if(isset($_SESSION['add'])){
             //       echo $_SESSION['add'] ;
             //       unset($_SESSION['add']) ; //display just one time 
@@ -16,10 +17,21 @@
             //    }
 =======
 >>>>>>> c882d4c (init2)
+=======
+               if(isset($_SESSION['add'])){
+                  echo $_SESSION['add'] ;
+                  unset($_SESSION['add']) ; //display just one time 
+               }
+               if(isset($_SESSION['delete'])){
+                  echo $_SESSION['delete'] ;
+                  unset($_SESSION['delete']) ; //display just one time 
+ 
+>>>>>>> ece5bf3 (deposite)
                if(isset($_SESSION['update'])){
                   echo $_SESSION['update'] ;
                   unset($_SESSION['update']) ; //display just one time 
                }
+<<<<<<< HEAD
 <<<<<<< HEAD
             //    if(isset($_SESSION['noUser'])){
             //       echo $_SESSION['noUser'] ;
@@ -38,14 +50,36 @@
             //       echo $_SESSION['no-admin-found'] ;
             //       unset($_SESSION['no-admin-found']) ; //display just one time 
             //    }
+=======
+               if(isset($_SESSION['noUser'])){
+                  echo $_SESSION['noUser'] ;
+                  unset($_SESSION['noUser']) ; //display just one time 
+               }
+               if(isset($_SESSION['change'])){
+                  echo $_SESSION['change'] ;
+                  unset($_SESSION['change']) ; //display just one time 
+               }
+               if(isset($_SESSION['noMatch'])){
+                  echo $_SESSION['noMatch'] ;
+                  unset($_SESSION['noMatch']) ; //display just one time 
+               }
+
+               if(isset($_SESSION['no-admin-found'])){
+                  echo $_SESSION['no-admin-found'] ;
+                  unset($_SESSION['no-admin-found']) ; //display just one time 
+               }
+>>>>>>> ece5bf3 (deposite)
 
 
                ?>
                <br><br>
+<<<<<<< HEAD
 =======
                ?>
                <br>
 >>>>>>> c882d4c (init2)
+=======
+>>>>>>> ece5bf3 (deposite)
 
                <!-- button to add admin -->
                <!-- <a href="<?php echo  SITEURL; ?>addServicePoint.php" class="btn-primary">Add Service Point</a> -->
@@ -116,6 +150,10 @@
 
                             <?php 
                           }
+<<<<<<< HEAD
+=======
+                        }
+>>>>>>> ece5bf3 (deposite)
                       }
                   
                   

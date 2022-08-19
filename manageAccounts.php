@@ -1,10 +1,16 @@
 <?php include('partials/menu.php') ?>
 
 <div class="container">
+<<<<<<< HEAD
         <div class="wrapper">
                <h1>Manage Accounts</h1>
 <<<<<<< HEAD
 =======
+=======
+<div style="width:90%" class="wrapper">
+               <h1>Manage Accounts</h1>
+
+>>>>>>> ece5bf3 (deposite)
                <br> <br><br>
                <?php
                if(isset($_SESSION['disactive'])){
@@ -44,19 +50,51 @@
                               $activationDate = $rows['activationDate'] ;
                               $lastModifiedDate = $rows['lastModifiedDate'] ;
                               $clientId = $rows['clientId'] ;
+<<<<<<< HEAD
                               
                               
                               $convertedCreationDate = $creationDate->format('Y-m-d ');
                               $convertedActivationDate = $activationDate->format('Y-m-d ');
                               $convertedModificationDate = $lastModifiedDate->format('Y-m-d ');
 
+=======
+
+
+                              if($status ==0){
+                                $statusMessage ="Disactive";
+                              }
+
+                              else{
+                                $statusMessage ="Active";
+                              }
+                              
+                              
+                              $convertedCreationDate = $creationDate->format('Y-m-d');
+                              if(isset($lastModifiedDate)){
+                              $convertedModificationDate = $lastModifiedDate->format('Y-m-d');
+                              }
+                              else{
+                                $convertedModificationDate = " ";
+                              }
+
+                              if(isset($activationDate)){
+                                $convertedActivationDate = $activationDate->format('Y-m-d');
+                              }
+                                else{
+                                  $convertedActivationDate = " ";
+                                }
+>>>>>>> ece5bf3 (deposite)
                               // display in the table 
                               ?>
 
                               <tr>
                                 <td><?php echo $id?></td>
                                 <td><?php echo $type?></td>
+<<<<<<< HEAD
                                 <td><?php echo $status?></td>
+=======
+                                <td><?php echo $statusMessage?></td>
+>>>>>>> ece5bf3 (deposite)
                                 <td><?php echo $convertedCreationDate?></td>
                                 <td><?php echo $convertedActivationDate?></td>
                                 <td><?php echo $convertedModificationDate?></td>
@@ -100,7 +138,10 @@
 
                  
                </table>
+<<<<<<< HEAD
 >>>>>>> c882d4c (init2)
+=======
+>>>>>>> ece5bf3 (deposite)
         </div>
 </div>
 
