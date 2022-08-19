@@ -29,6 +29,15 @@ include('../config/constants.php') ;
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
+<<<<<<< HEAD
+=======
+
+        <li class="nav-item">
+          <a class="nav-link active" href="deposite.php">Deposite & Withdraw
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+>>>>>>> ece5bf3 (deposite)
        
         <li class="nav-item">
           <a class="nav-link" href="../login.php">Logout</a>
