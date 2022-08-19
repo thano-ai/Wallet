@@ -103,6 +103,7 @@ $servicePointId = $_SESSION['agent_id'];
                                   while ($row = sqlsrv_fetch_array($res)) {
                                         $transactionId=$row['id'];
                                         $amount=$row['amount']; 
+                                        $currency=$row['currency']; 
                                         $dbAccountId =$row['AccountId']; 
                                         $dbClientId =$row['affectedId']; 
                                         $date = $row['startdate'];
@@ -140,7 +141,7 @@ $servicePointId = $_SESSION['agent_id'];
                                 <td><?php echo $newDate?></td>
                                 <td><?php echo $senderName?></td>
                                 <td><?php echo $recieverName?></td>
-                                <td><?php echo $amount?></td>
+                                <td><?php echo $amount." ".$currency?></td>
                               
                                 
                                
